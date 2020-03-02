@@ -1,0 +1,42 @@
+{
+    "education": [
+        {
+            "title": "Projet Java Pharmacie St Bernadette",
+            "year": 2016,
+            "abstract": "Projet d'ecole : Realisation d'une application Java de gestion de pharmacie",
+            "previewMedia": "http://www.adhamdannaway.com/wp-content/uploads/2016/08/feature-qantas-homepage-1.jpg",
+            "dialogs": [
+                {
+                    "speech": "Ok please select the language to use",
+                    "information": "",
+                    "color": "primary",
+                    "icon": "mdi-translate",
+                    "context": "HOME",
+                    "data": [{
+                            "title": "French - Français",
+                            "speech": ["🚴🏻‍🚴🏻🚴", "On continue en Français?"],
+                            "value": "fr",
+                            "actions": [{
+                                "type": "button",
+                                "icon": "",
+                                "label": ["Oui", "Oui continuer", "Valider"],
+                                "callback": "(assistant) => {assistant.checkCurrent(true)}",
+                                "timeout": 1000
+                            }]
+                        }
+                    ],
+                    "shuffleTyping": true,
+                    "sleepSpeech": ["Okay✌🏾", "Cool", "Super 🤙🏾", "Nice👌🏼", "👍🏼"],
+                    "preTypeDelay": 1500,
+                    "preEraseDelay": 1500,
+                    "doneAfterSpeech": false,
+                    "eraseStyle": "backspace",
+                    "eraseDelay": 100,
+                    "selected": null,
+                    "waitSelection": true,
+                    "forceSelection": true
+                }
+            ]
+        }
+    ]
+}
