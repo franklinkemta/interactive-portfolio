@@ -1,6 +1,12 @@
 <template>
   <v-app>
-    <v-app-bar fixed app dark flat src="https://wallpapercave.com/wp/wp3188141.png">
+    <v-app-bar
+      fixed
+      app
+      dark
+      flat
+      src="https://wallpapercave.com/wp/wp3188141.png"
+    >
       <v-btn :loading="reloadEffect" icon class="mr-1" @click="animeReload">
         <v-icon>mdi-play</v-icon>
       </v-btn>
@@ -28,12 +34,18 @@
         <v-chip class="ma-2" color="transparent">
           <a
             style="text-decoration:none; color:white; font-weight: bold"
-            href="https://drive.google.com/file/d/12qPviVYlDY8pOFkujtIctx1KLGFsE73t/view?usp=sharing"
+            href="https://drive.google.com/file/d/12FG6svpkzxTLz8o7_3sHuJ2n9cVotryQ/view?usp=sharing"
             target="_blank"
-          >My portfolio</a>
+            >My portfolio</a
+          >
         </v-chip>
         <template v-for="item in menuItems">
-          <v-chip :key="item.ref" class="ma-2" @click="playMenuItem(item)" color="transparent">
+          <v-chip
+            :key="item.ref"
+            class="ma-2"
+            @click="playMenuItem(item)"
+            color="transparent"
+          >
             <b class="font-weight-bold">{{ item.title }}</b>
           </v-chip>
         </template>
@@ -42,7 +54,12 @@
       <v-spacer />
       <div class="hidden-xs-only">
         <template v-for="item in socialLinks">
-          <a :key="item.icon" class="social-links" :href="item.link" target="_blank">
+          <a
+            :key="item.icon"
+            class="social-links"
+            :href="item.link"
+            target="_blank"
+          >
             <v-btn icon>
               <v-icon>{{ item.icon }}</v-icon>
             </v-btn>
@@ -58,7 +75,7 @@
               <v-card :class="profiles.fullstack_eng.ccClass" flat tile>
                 <v-card-text :class="'pa-1 ' + profiles.fullstack_eng.cssClass">
                   <div
-                    v-html="profiles.fullstack_eng.title "
+                    v-html="profiles.fullstack_eng.title"
                     class="headline font-weight-bold black--text"
                   ></div>
                   <div
@@ -78,16 +95,23 @@
               </v-card>
             </v-col>
             <v-col cols="12" sm="4" md="4" lg="4" class="col-xs-12">
-              <v-avatar size="150" class="mr-2 elevation-2 v-btn v-btn--depressed v-btn--fab">
+              <v-avatar
+                size="150"
+                class="mr-2 elevation-2 v-btn v-btn--depressed v-btn--fab"
+              >
                 <img src="/images/franklinkemta.jpeg" alt="FK" />
               </v-avatar>
-              <div class="subtitle font-weight-medium black--text mt-3">{{ copy }}</div>
+              <div class="subtitle font-weight-medium black--text mt-3">
+                {{ copy }}
+              </div>
             </v-col>
             <v-col cols="12" sm="4" md="4" lg="4" class="col-xs-12">
               <v-card :class="profiles.workspace_tools.ccClass" flat tile>
-                <v-card-text :class="'pa-1 ' + profiles.workspace_tools.cssClass">
+                <v-card-text
+                  :class="'pa-1 ' + profiles.workspace_tools.cssClass"
+                >
                   <div
-                    v-html="profiles.workspace_tools.title "
+                    v-html="profiles.workspace_tools.title"
                     class="headline font-weight-bold black--text"
                   ></div>
                   <div
@@ -115,7 +139,9 @@
       </v-content>
     </transition>
     <v-footer fixed color="transparent" app>
-      <span class="font-weight-bold caption">&copy; {{ new Date().getFullYear() }} {{copy}}</span>
+      <span class="font-weight-bold caption"
+        >&copy; {{ new Date().getFullYear() }} {{ copy }}</span
+      >
     </v-footer>
     <transition name="assistant" appear>
       <HiAssistant ref="Assistant" showLog name="Hi !" v-if="assistant" />
