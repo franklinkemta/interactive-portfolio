@@ -18,7 +18,7 @@
       </v-flex>
     </v-layout>
     <v-divider class=""></v-divider>
-    <v-row  align="center" justify="center" class="projectsLayout grey lighten-4" >
+    <v-row  class="projectsLayout grey lighten-4" >
       <template v-for="(project, i) in projects">
         <v-col :key="i" cols="12" md="4">
           <ProjectCard v-if="typeof(project)==='object'" @play="playProject" :data="project" />

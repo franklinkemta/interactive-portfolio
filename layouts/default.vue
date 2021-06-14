@@ -164,8 +164,8 @@ export default {
       reloadEffect: false,
       assistant: true,
       title:
-        '<b class="mr-1 black--text">#</b>SELECT * FROM <span class="mx-1 cyan--text">Portfolios</span> WHERE Name=\'<span class="orange--text">Franklin_Kemta</span>\' ;',
-      titleLoad: "> SELECT * FROM Portfolios WHERE Name= 'Franklin_Kemta' ;",
+        '<b class="mr-1 black--text">#</b>SELECT * FROM <span class="mx-1 cyan--text">web</span> WHERE name=\'<span class="orange--text">franklin_kemta</span>\' ;',
+      titleLoad: "> SELECT * FROM web WHERE name= 'franklin_kemta' ;",
       copy: "Franklin Kemta",
     };
   },
